@@ -23,6 +23,11 @@ class NavBar extends StatelessWidget {
                 end: Alignment.topLeft
               )
             ),
+            child: Center(
+              child: Text("NP", 
+                style: TextStyle(fontSize: 30, color: Colors.white),
+              )
+            )
           )
         ],
       ),

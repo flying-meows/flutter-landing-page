@@ -23,15 +23,18 @@ class HomePage extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color(0xFFF8FBFF), 
-            Color(0xFFFCFDFD),
+            Color(0xFFFFFBFF), 
+            Color(0xFF3023AE),
           ])),
-      child: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            NavBar()
-          ],
-        )
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        body: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              NavBar()
+            ],
+          )
+        ),
       )
     );
   }
