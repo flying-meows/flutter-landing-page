@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
+import '../utils/responsiveLayout.dart';
 
 class NavBar extends StatelessWidget {
+  // Navigation Bar Items
+  final navLinks = ["Home", "Products", "Features", "Contact"]; 
+
+  List<Widget> navItem(){
+    return navLinks.map((text){
+      return Padding(
+        padding: EdgeInsets.only(left: 18), 
+        child: Text(text, style:TextStyle(fontFamily: "Montserrat-Bold")),
+      );
+    }).toList();
+  }
 
   @override 
   Widget build(BuildContext context) {
@@ -8,8 +20,9 @@ class NavBar extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 45, vertical: 38),
       child: Row(
         // After doing Wrap with Row to the above Row,
-        // below line of code doesn't seem to have effect anymore. 
-        mainAxisAlignment: MainAxisAlignment.spaceBetween, 
+        // below line of code doesn't seem to have effect 
+        // anymore on Container, SizedBox and Text. 
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
         children: <Widget>[
           Row(
             children: <Widget>[
@@ -40,6 +53,14 @@ class NavBar extends StatelessWidget {
               Text("Britu", style: TextStyle(fontSize: 26))
             ],
           ),
+          // Responsive Layout
+          if(!ResponsiveLayout.isSmallScreen(context))
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround, 
+            children: <Widget>[
+              ...navItem()
+            ],
+          )
         ],
       ),
     );
