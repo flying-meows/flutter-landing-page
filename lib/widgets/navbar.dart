@@ -3,7 +3,7 @@ import '../utils/responsiveLayout.dart';
 
 class NavBar extends StatelessWidget {
   // Navigation Bar Items
-  final navLinks = ["Home", "Products", "Features", "Contact"]; 
+  final navLinks = ["Food", "Shelter", "Toy", "Pets"]; 
 
   List<Widget> navItem(){
     return navLinks.map((text){
@@ -34,14 +34,14 @@ class NavBar extends StatelessWidget {
                   gradient: LinearGradient(
                     colors: [
                       Color(0xFFC86DD7), 
-                      Color(0xFF3023AE),
+                      Color(0xFF00A895),
                     ], 
                     begin: Alignment.bottomRight,
                     end: Alignment.topLeft
                   )
                 ),
                 child: Center(
-                  child: Text("NP", 
+                  child: Text("🐈", 
                     style: TextStyle(fontSize: 30, color: Colors.white),
                   ),
                 ),
@@ -50,7 +50,7 @@ class NavBar extends StatelessWidget {
                 width: 16, 
                 // child: Text("ttest"),
               ),
-              Text("Britu", style: TextStyle(fontSize: 26))
+              Text("Meows Family", style: TextStyle(fontSize: 26))
             ],
           ),
           // Responsive Layout
@@ -65,7 +65,7 @@ class NavBar extends StatelessWidget {
                   height: 40, 
                   decoration: BoxDecoration(
                     gradient: LinearGradient(
-                      colors: [Color(0xFFC86DD7),Color(0xFF3023AE)], 
+                      colors: [Color(0xFFC86DD7),Color(0xFF00A895)], 
                       begin: Alignment.bottomRight, 
                       end: Alignment.topLeft
                     ),
