@@ -22,7 +22,7 @@ class NavBar extends StatelessWidget {
         // After doing Wrap with Row to the above Row,
         // below line of code doesn't seem to have effect 
         // anymore on Container, SizedBox and Text. 
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly, 
+        mainAxisAlignment: MainAxisAlignment.spaceBetween, 
         children: <Widget>[
           Row(
             children: <Widget>[
