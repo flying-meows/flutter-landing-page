@@ -152,7 +152,7 @@ class SmallChild extends StatelessWidget {
                         TextSpan(
                           text: "🐱", 
                           style: TextStyle(
-                            fontSize: 60, 
+                            fontSize: 40, 
                             fontWeight: FontWeight.bold, 
                             // color: Colors.black54
                           )
@@ -165,12 +165,19 @@ class SmallChild extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 12.0, top: 20), 
                     child: Text("LET'S FLY TO MARS"), 
                   ), 
-
                   SizedBox(
-                    height: 40, 
+                    height: 30, 
                   ),
-
-                  Search()
+                  Center(
+                    child: Image.network("assets/cat-lady.png", scale: 1),
+                  ),
+                  SizedBox(
+                    height: 32, 
+                  ),
+                  Search(),
+                  SizedBox(
+                    height: 30,
+                  )
           ],
         ),
       )
