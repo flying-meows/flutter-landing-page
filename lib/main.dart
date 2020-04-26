@@ -73,7 +73,7 @@ class LargeChild extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start, 
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text("မင်္ဂလာပါ", 
+                  Text("Mingalarbar!", 
                     style: TextStyle(
                       fontSize: 60,
                       fontWeight:FontWeight.bold, 
@@ -98,9 +98,62 @@ class LargeChild extends StatelessWidget {
                             // color: Colors.black54
                           )
                         )
-                      ]
+                      ], 
                     ),
-                  )
+                  ), 
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 12.0, top: 20), 
+                    child: Text("LET'S FLY TO MARS"), 
+                  ), 
+
+                  SizedBox(
+                    height: 40, 
+                  ),
+
+                  Padding(
+                    padding: EdgeInsets.only(
+                      left: 4.0, 
+                      right: ResponsiveLayout.isSmallScreen(context) ? 4 : 130, 
+                      top: 10, 
+                      bottom: 40,
+                    ),
+                    child: Container(
+                      height: 60,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black12,
+                            offset: Offset(0,8),
+                            blurRadius: 8
+                          ),
+                        ]
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Expanded(
+                              flex: 8,
+                              child: TextField(
+                                decoration: InputDecoration(
+                                  border: InputBorder.none, 
+                                  hintText: 'Your Email Address'
+                                ),
+                              ),
+                            ),
+                            // Expanded(
+                            //     flex: 2,
+                            // ),
+                          ],
+                        )
+                      )
+                    )
+                    
+                  ),
                 ]
               )
               )
