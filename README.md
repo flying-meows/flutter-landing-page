@@ -5,6 +5,16 @@ A Flutter Landing Page
 Ref. Tutorial  
 [Flutter Web : Responsive Landing Page - Speed Code](https://www.youtube.com/watch?v=87cz-ihAJ-8) 
 
+`$flutter build web`  
+- files from /build/web folder are moved to /docs so that the Github can be built.  
+- images from /assets are cloned into /docs/assets
+
+#### Github Pages Setting  
+`master branch /docs folder`  
+Otherwise, Github Pages will be being built from the Flutter project folder.  
+
+Icons from [icons8](https://icons8.com/)  
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
