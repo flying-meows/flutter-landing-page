@@ -50,7 +50,7 @@ class NavBar extends StatelessWidget {
                 width: 16, 
                 // child: Text("ttest"),
               ),
-              Text("Meows Family", style: TextStyle(fontSize: 26))
+              Text("Flying Meows", style: TextStyle(fontSize: 26))
             ],
           ),
           // Responsive Layout
