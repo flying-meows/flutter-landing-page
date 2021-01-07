@@ -40,17 +40,23 @@ class SendBtn extends StatelessWidget {
                   SizedBox(
                     width: ResponsiveLayout.isSmallScreen(context)
                         ? 4
-                        : ResponsiveLayout.isMediumScreen(context) ? 6 : 8,
+                        : ResponsiveLayout.isMediumScreen(context)
+                            ? 6
+                            : 8,
                   ),
                   Image.network(
                     "assets/icons8-paper_plane.png",
                     color: Colors.white,
                     width: ResponsiveLayout.isSmallScreen(context)
                         ? 12
-                        : ResponsiveLayout.isMediumScreen(context) ? 12 : 30,
+                        : ResponsiveLayout.isMediumScreen(context)
+                            ? 12
+                            : 30,
                     height: ResponsiveLayout.isSmallScreen(context)
                         ? 12
-                        : ResponsiveLayout.isMediumScreen(context) ? 12 : 30,
+                        : ResponsiveLayout.isMediumScreen(context)
+                            ? 12
+                            : 30,
                   )
                 ],
               ),
